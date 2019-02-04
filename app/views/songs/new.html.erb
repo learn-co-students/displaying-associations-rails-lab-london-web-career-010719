@@ -4,8 +4,11 @@
   <%= f.label :title %>
   <%= f.text_field :title %>
   <br />
+  <%= f.label :artist_id, 'Select Artist:' %>
+  <%= f.collection_select :artist_id, Artist.all, :id, :name %> <br>
 
   <%= f.submit %>
 <% end %>
 
-
+<%= link_to "<<Back to songs", songs_path %> <br>
+<%= link_to "<<Artists", artists_path %> <br>
