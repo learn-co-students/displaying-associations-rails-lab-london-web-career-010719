@@ -4,8 +4,6 @@
   <%= f.label :title %>
   <%= f.text_field :title %>
   <br />
-
+  <%= f.collection_select :artist_id, @artists, :id, :name %>
   <%= f.submit %>
 <% end %>
-
-
