@@ -1,0 +1,6 @@
+<h1>Artists</h1>
+<ul>
+  <% @artists.all.map do |artist| %>
+    <li><%= link_to artist.name, artist_path(artist) %></li>
+  <% end %>
+</ul>
